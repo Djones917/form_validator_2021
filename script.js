@@ -1,1 +1,1 @@
-console.log('Connected!');
+const form = document.getElementById('form');
