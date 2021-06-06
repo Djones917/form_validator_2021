@@ -5,8 +5,12 @@ const messageContainer = document.querySelector('.message-container');
 const message = document.getElementById('message');
 
 
+let isValid = false;
+
 function processFormData(e) {
   e.preventDefault();
+  // Validate Form
+  validateForm();
 }
 
 
