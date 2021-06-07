@@ -7,6 +7,12 @@ const message = document.getElementById('message');
 
 let isValid = false;
 
+function validateForm() {
+  // Using Constraint API
+  isValid = form.checkValidity();
+  console.log(isValid);
+}
+
 function processFormData(e) {
   e.preventDefault();
   // Validate Form
