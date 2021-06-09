@@ -12,10 +12,19 @@ function validateForm() {
   // Using Constraint API
   isValid = form.checkValidity();
   // Stye main message for an error
-  if(!isValid) {
+  if (!isValid) {
     message.textContent = 'Please fill out all fields.';
     message.style.color = 'red';
     messageContainer.style.borderColor = 'red';
+  }
+  // Check to see if passwords match
+  if (password1El.value === password2El.value) {
+     passwordsMatch = true;
+     password1El.style.borderColor = 'green';
+     password2El.style.borderColor = 'green';
+  } else {
+    passwordsMatch = false;
+    message.textContent = 'Make sure passwords match.';
   }
 }
 
