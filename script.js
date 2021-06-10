@@ -25,6 +25,10 @@ function validateForm() {
   } else {
     passwordsMatch = false;
     message.textContent = 'Make sure passwords match.';
+    message.style.color = 'red';
+    messageContainer.style.borderColor = 'red';
+    password1El.style.borderColor = 'red';
+    password2El.style.borderColor = 'red';
   }
 }
 
